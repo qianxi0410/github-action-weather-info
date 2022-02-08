@@ -5,5 +5,10 @@
   "main": "index.mjs",
   "repository": "https://github.com/qianxi0410/github-action-weather-info",
   "author": "qianxi0410 <894871277@qq.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "js-base64": "^3.7.2",
+    "octokit": "^1.7.1"
+  }
 }
