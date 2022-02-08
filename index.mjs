@@ -103,6 +103,9 @@ const getWeatherInfo = async () => {
   const { data } = await axios.get(
     `https://restapi.amap.com/v3/weather/weatherInfo?key=${GAODE_KEY}&city=${CITY_ATCODE}&extensions=all`
   );
+
+  console.log(data);
+
   if (data.status !== '1') {
     return null;
   }
