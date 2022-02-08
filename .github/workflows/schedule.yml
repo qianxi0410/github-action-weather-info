@@ -1,18 +1,19 @@
 name: Update Github Profile With Weather Info
 
 on:
-  push:
-    branches: master
   schedule:
     - cron: "0 */3 * * *"
+  workflow_dispatch:
+    
+
 jobs:
-  update-gist:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - name: Install
-        run: npm ci
-      - name: Update gist
+        run: yarn
+      - name: Update Github Profile
         run: node ./index.mjs
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
