@@ -2,6 +2,10 @@ import { Octokit } from 'octokit';
 import axios from 'axios';
 import { Base64 } from 'js-base64';
 
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 const { GAODE_KEY, GH_TOKEN, CITY_ATCODE } = process.env;
 
 const getWeatherEmoji = weather => {
