@@ -1,0 +1,8 @@
+name: "weather-info"
+description: "Get weather information for your location"
+branding:
+  icon: "clipboard"
+  color: "blue"
+runs:
+  using: "node16"
+  main: "index.mjs"  
