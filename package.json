@@ -1,0 +1,9 @@
+{
+  "name": "github-action-weather-info",
+  "version": "1.0.0",
+  "description": "An action for a user to update the user profile weather information",
+  "main": "index.mjs",
+  "repository": "https://github.com/qianxi0410/github-action-weather-info",
+  "author": "qianxi0410 <894871277@qq.com>",
+  "license": "MIT"
+}
