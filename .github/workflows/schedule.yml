@@ -18,4 +18,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GAODE_KEY: ${{ secrets.GAODE_KEY }}
-          CITY_ATCODE: 360300
+          CITY_ATCODE: 610100

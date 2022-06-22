@@ -137,6 +137,12 @@ const getWeatherInfo = async () => {
 
 const changeFileContent = async content => {
 	const idx = content.indexOf('id="weather"');
+
+	// not found 
+	if (idx === -1) {
+		return
+	}
+
 	// < position
 	const idxOfRight = content.indexOf('>', idx);
 	// < position
@@ -178,6 +184,10 @@ const updateProfile = async () => {
 	});
 
 	const content = await changeFileContent(fileContent);
+
+	if (!content) {
+		return;
+	}
 
 	await octokit.rest.repos.createOrUpdateFileContents({
 		mediaType: {
